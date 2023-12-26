@@ -35,8 +35,8 @@ function Description() {
   return (
     <Container>
       <Details>
-        Hello! Im Engr. John Bryan Odiña , a passionate self taught web
-        developer based in Taguig, Metro Manila, Philippines
+        Hello! Im Engr. John Bryan Odiña, a passionate self taught web developer
+        based in Taguig, Metro Manila, Philippines.
       </Details>
     </Container>
   );

@@ -11,34 +11,31 @@ const StyledImage = styled.img`
   /* md */
   @media (max-width: 768px) {
     max-width: 640px;
-    height: 400px;
-    margin-top: 5rem;
-    width: auto;
+    padding-bottom: 2rem;
   }
 
   /* sm */
   @media (max-width: 640px) {
     max-width: 475px;
-    height: 300px;
-    width: auto;
-    margin-top: 3rem;
   }
   /* xs */
   @media (max-width: 475px) {
     width: 100%;
-    height: 300px;
-    width: auto;
-    margin-top: 1rem;
   }
+`;
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 function Image() {
   return (
-    <div>
+    <Container>
       <StyledImage
         src="https://avatars.githubusercontent.com/u/149803435?s=400&u=4657ebe7011b87a96e0a06a04fc204aefba12e5c&v=4"
         alt=""
       />
-    </div>
+    </Container>
   );
 }
 
