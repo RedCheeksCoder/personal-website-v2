@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const maxWidths = {
+  lg: "1024px",
+  md: "768px",
+  sm: "640px",
+  xs: "475px",
+};
+
 const StyledTechStack = styled.div`
   display: flex;
   font-size: 2rem;
@@ -12,13 +19,10 @@ const StyledTechStack = styled.div`
   span {
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-property: transform;
     transition-property: transform;
     &:before {
       pointer-events: none;
@@ -30,75 +34,65 @@ const StyledTechStack = styled.div`
       height: 10px;
       width: 90%;
       opacity: 0;
-      background: -webkit-radial-gradient(
-        center,
-        ellipse,
-        rgba(0, 0, 0, 0.35) 0%,
-        rgba(0, 0, 0, 0) 80%
-      );
       background: radial-gradient(
         ellipse at center,
         rgba(0, 0, 0, 0.35) 0%,
         rgba(0, 0, 0, 0) 80%
       );
-      /* W3C */
-      -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s;
-      -webkit-transition-property: transform, opacity;
       transition-property: transform, opacity;
     }
 
     &:hover,
     &:focus,
     &:active {
-      -webkit-transform: translateY(-5px);
       transform: translateY(-5px);
     }
     &:hover::before,
     &:active::before,
     &:focus:before {
       opacity: 1;
-      -webkit-transform: translateY(5px);
       transform: translateY(5px);
     }
   }
 
-  /* lg */
-  @media (max-width: 1024px) {
-    max-width: 768px;
+  @media (max-width: ${maxWidths.lg}) {
+    max-width: ${maxWidths.md};
     justify-content: center;
     margin-top: 3rem;
   }
 
-  /* md */
-  @media (max-width: 768px) {
-    max-width: 640px;
-  }
-
-  /* sm */
-  @media (max-width: 640px) {
-    max-width: 475px;
-  }
-
-  /* xs */
-  @media (max-width: 475px) {
+  @media (max-width: ${maxWidths.xs}) {
     width: 100%;
   }
 `;
+
 function TechStack() {
   return (
     <StyledTechStack>
       <span>
-        <img src="https://skillicons.dev/icons?i=html,css" />
+        <img
+          src="https://skillicons.dev/icons?i=html,css"
+          alt="HTML and CSS icons"
+        />
       </span>
       <span>
-        <img src="https://skillicons.dev/icons?i=javascript,react" />
+        <img
+          src="https://skillicons.dev/icons?i=javascript,react"
+          alt="JavaScript and React icons"
+        />
       </span>
       <span>
-        <img src="https://skillicons.dev/icons?i=styledcomponents,tailwind" />
+        <img
+          src="https://skillicons.dev/icons?i=styledcomponents,tailwind"
+          alt="Styled Components and Tailwind icons"
+        />
       </span>
       <span>
-        <img src="https://skillicons.dev/icons?i=git,github" />
+        <img
+          src="https://skillicons.dev/icons?i=git,github"
+          alt="Git and GitHub icons"
+        />
       </span>
     </StyledTechStack>
   );

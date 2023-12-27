@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+const maxWidths = {
+  "2xl": "1536px",
+  xl: "1280px",
+  lg: "1024px",
+  md: "768px",
+  sm: "640px",
+  xs: "475px",
+};
+
 const StyledFooter = styled.div`
   font-size: 2rem;
   height: 30vh;
@@ -21,39 +30,17 @@ const StyledFooter = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  /* 2xl */
-  @media (max-width: 1536px) {
-    max-width: 1280px;
-  }
-
-  /* xl */
-  @media (max-width: 1280px) {
-    max-width: 1024px;
+  @media (max-width: ${maxWidths.xl}) {
+    max-width: ${maxWidths.lg};
     flex-direction: column;
     height: 20vh;
   }
 
-  /* lg */
-  @media (max-width: 1024px) {
-    max-width: 768px;
-  }
-
-  /* md */
-  @media (max-width: 768px) {
-    max-width: 640px;
-  }
-
-  /* sm */
-  @media (max-width: 640px) {
-    max-width: 475px;
-    font-size: 1.5rem;
-  }
-
-  /* xs */
-  @media (max-width: 475px) {
+  @media (max-width: ${maxWidths.xs}) {
     width: 100%;
   }
 `;
+
 const Container = styled.div`
   background-color: #2d2e32;
   display: flex;
@@ -67,6 +54,7 @@ const Contacts = styled.div`
   align-items: center;
   height: 50px;
 `;
+
 function Footer() {
   return (
     <Container>
@@ -117,13 +105,14 @@ function Footer() {
           </a>
         </Contacts>
         <div>
-          <a href="">Email: johnbryanodina.dev@gmail.com</a>
+          <a href="mailto:johnbryanodina.dev@gmail.com">
+            Email: johnbryanodina.dev@gmail.com
+          </a>
         </div>
         <div>
-          <p>Copyright &copy;. All rights reserved.</p>
+          <p>Copyright ©. All rights reserved.</p>
         </div>
       </StyledFooter>
-      ;
     </Container>
   );
 }

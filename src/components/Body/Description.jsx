@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const maxWidths = {
+  lg: "1024px",
+  md: "768px",
+  sm: "640px",
+  xs: "475px",
+};
+
 const Details = styled.div`
   font-size: 2rem;
   font-weight: 500;
@@ -10,34 +17,25 @@ const Details = styled.div`
 
 const Container = styled.div`
   display: flex;
-  /* lg */
-  @media (max-width: 1024px) {
-    max-width: 768px;
+
+  @media (max-width: ${maxWidths.lg}) {
+    max-width: ${maxWidths.md};
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  /* md */
-  @media (max-width: 768px) {
-    max-width: 640px;
-  }
 
-  /* sm */
-  @media (max-width: 640px) {
-    max-width: 475px;
-  }
-
-  /* xs */
-  @media (max-width: 475px) {
+  @media (max-width: ${maxWidths.xs}) {
     width: 100%;
   }
 `;
+
 function Description() {
   return (
     <Container>
       <Details>
-        Hello! Im Engr. John Bryan Odiña, a passionate self taught web developer
-        based in Taguig, Metro Manila, Philippines.
+        Hello! I'm Engr. John Bryan Odiña, a passionate self-taught web
+        developer based in Taguig, Metro Manila, Philippines.
       </Details>
     </Container>
   );

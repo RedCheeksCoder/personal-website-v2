@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
 
 const sizes = {
   small: css`
@@ -24,24 +25,30 @@ const variations = {
   primary: css`
     color: var(--color-brand-50);
     background-color: var(--color-brand-600);
-
-    &:hover {
-      background-color: #00d8fec7;
-    }
   `,
   secondary: css`
     color: var(--color-grey-600);
     background: var(--color-grey-0);
     border: 1px solid var(--color-grey-200);
+  `,
+  danger: css`
+    color: var(--color-red-100);
+    background-color: var(--color-red-700);
+  `,
+};
 
+const hoverStyles = {
+  primary: css`
+    &:hover {
+      background-color: #00d8fec7;
+    }
+  `,
+  secondary: css`
     &:hover {
       background-color: var(--color-grey-50);
     }
   `,
   danger: css`
-    color: var(--color-red-100);
-    background-color: var(--color-red-700);
-
     &:hover {
       background-color: var(--color-red-800);
     }
@@ -52,13 +59,22 @@ const Button = styled.button`
   border: none;
   border-radius: var(--border-radius-md);
   box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  outline: none;
 
   ${(props) => sizes[props.size]}
   ${(props) => variations[props.variation]}
+  ${(props) => hoverStyles[props.variation]}
 `;
 
 Button.defaultProps = {
-  variations: "primary",
+  variation: "primary",
   size: "medium",
 };
+
+Button.propTypes = {
+  variation: PropTypes.oneOf(["primary", "secondary", "danger"]),
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+};
+
 export default Button;

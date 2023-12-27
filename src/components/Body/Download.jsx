@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import Button from "../ui/Button";
 
+const maxWidths = {
+  lg: "1024px",
+  md: "768px",
+  sm: "640px",
+  xs: "475px",
+};
+
 const Container = styled.div`
   display: flex;
   align-items: center;
@@ -25,23 +32,14 @@ const Container = styled.div`
     height: 80px;
   }
 
-  @media (max-width: 1024px) {
-    max-width: 768px;
-    display: flex;
+  @media (max-width: ${maxWidths.lg}) {
+    max-width: ${maxWidths.md};
     justify-content: center;
-  }
-  /* md */
-  @media (max-width: 768px) {
-    max-width: 640px;
+    align-items: center;
+    text-align: center;
   }
 
-  /* sm */
-  @media (max-width: 640px) {
-    max-width: 475px;
-  }
-
-  /* xs */
-  @media (max-width: 475px) {
+  @media (max-width: ${maxWidths.xs}) {
     width: 100%;
   }
 `;
