@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Details = styled.div`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   padding: 2rem 0;
   width: 80%;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledFooter = styled.div`
-  font-size: 3rem;
+  font-size: 2rem;
   height: 30vh;
   width: 70%;
   color: whitesmoke;

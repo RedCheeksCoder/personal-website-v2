@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 const StyledImage = styled.img`
   border-radius: 50%;
+  /* max-width: 100%;
+  height: auto; */
 
   @media (max-width: 1024px) {
     max-width: 768px;
     height: 400px;
-    width: auto;
   }
   /* md */
   @media (max-width: 768px) {

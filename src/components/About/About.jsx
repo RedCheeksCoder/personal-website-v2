@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const StyledAbout = styled.div`
   background-color: #dd7676;
-  height: 50vh;
+  height: 100dvh;
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 4rem;
+  column-gap: 3rem;
 
   img {
     height: 300px;
@@ -24,7 +24,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color: whitesmoke;
 `;
 
 function About() {

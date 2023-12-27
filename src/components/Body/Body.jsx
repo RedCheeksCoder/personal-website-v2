@@ -3,6 +3,7 @@ import Description from "./Description";
 import Image from "./Image";
 import TechStack from "./TechStack";
 import styled from "styled-components";
+import Download from "./Download";
 
 const StyledBody = styled.div`
   border-top: 1px solid var(--color-grey-300);
@@ -16,6 +17,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100dvh;
+  background: #f7f6f388;
 
   /* lg */
   @media (max-width: 1024px) {
@@ -60,6 +62,7 @@ function Body() {
           <Headline />
           <Description />
           <TechStack />
+          <Download />
         </Details>
         <Image />
       </Container>

@@ -3,6 +3,19 @@ import NavBar from "./NavBar";
 import Cta from "./Cta";
 
 const Container = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  button {
+    color: white;
+    font-weight: 600;
+    background-color: #27a645;
+  }
+`;
+const StyledHeader = styled.div`
   font-family: "Open Sans", sans-serif;
   color: black;
   display: flex;
@@ -54,9 +67,11 @@ const Name = styled.h1`
 function Header() {
   return (
     <Container>
-      <Name>Bryan Odina</Name>
-      <NavBar />
-      <Cta />
+      <StyledHeader>
+        <Name>Bryan Odina</Name>
+        <NavBar />
+        <Cta />
+      </StyledHeader>
     </Container>
   );
 }
