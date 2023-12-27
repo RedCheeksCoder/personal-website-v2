@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHeadline = styled.h1`
-  font-size: 5rem;
+  font-size: 7rem;
   line-height: 1;
 
   @media (max-width: 1024px) {
@@ -10,6 +10,7 @@ const StyledHeadline = styled.h1`
     justify-content: center;
     align-items: center;
     max-width: 768px;
+    margin-top: 2rem;
   }
   /* md */
   @media (max-width: 768px) {

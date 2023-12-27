@@ -7,6 +7,7 @@ const StyledTechStack = styled.div`
   gap: 2rem;
   align-items: center;
   margin-top: 1rem;
+  flex-wrap: wrap;
 
   span {
     display: inline-block;
@@ -99,7 +100,6 @@ function TechStack() {
       <span>
         <img src="https://skillicons.dev/icons?i=git,github" />
       </span>
-      {/* <img src="https://skillicons.dev/icons?i=html,css,javascript,react,styledcomponents,tailwind,git" /> */}
     </StyledTechStack>
   );
 }

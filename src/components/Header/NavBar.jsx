@@ -14,17 +14,25 @@ const List = styled.li`
   list-style: none;
   font-weight: 600;
   &:hover {
-    color: #00ff88;
+    color: #00d7fe;
     transition: all 0.3s ease-in-out;
   }
 `;
 function NavBar() {
   return (
     <StyledNavBar>
-      <List>Home</List>
-      <List>About</List>
-      <List>Projects</List>
-      <List>Contact</List>
+      <List>
+        <a href="#hero">Home</a>
+      </List>
+      <List>
+        <a href="#about">About</a>
+      </List>
+      <List>
+        <a href="#projects">Projects</a>
+      </List>
+      <List>
+        <a href="#footer">Contact</a>
+      </List>
     </StyledNavBar>
   );
 }

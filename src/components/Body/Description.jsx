@@ -5,6 +5,7 @@ const Details = styled.div`
   font-weight: 500;
   padding: 2rem 0;
   width: 80%;
+  color: grey;
 `;
 
 const Container = styled.div`

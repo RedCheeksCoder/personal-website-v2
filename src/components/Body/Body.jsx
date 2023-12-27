@@ -10,6 +10,7 @@ const StyledBody = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f7f6f388;
 `;
 
 const Container = styled.div`
@@ -17,7 +18,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100dvh;
-  background: #f7f6f388;
 
   /* lg */
   @media (max-width: 1024px) {

@@ -2,17 +2,18 @@ import styled from "styled-components";
 
 const StyledImage = styled.img`
   border-radius: 50%;
-  /* max-width: 100%;
-  height: auto; */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
   @media (max-width: 1024px) {
     max-width: 768px;
-    height: 400px;
+    height: 300px;
   }
   /* md */
   @media (max-width: 768px) {
     max-width: 640px;
-    padding-bottom: 2rem;
   }
 
   /* sm */

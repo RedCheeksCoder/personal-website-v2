@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import NavBar from "./NavBar";
-import Cta from "./Cta";
-
 const Container = styled.div`
   position: fixed;
   top: 0;
@@ -9,11 +7,6 @@ const Container = styled.div`
   z-index: 5;
   background-color: whitesmoke;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
-  button {
-    color: white;
-    font-weight: 600;
-    background-color: #27a645;
-  }
 `;
 const StyledHeader = styled.div`
   font-family: "Open Sans", sans-serif;
@@ -68,9 +61,10 @@ function Header() {
   return (
     <Container>
       <StyledHeader>
-        <Name>Bryan Odina</Name>
+        <Name>
+          <a href="#hero">Bryan Odina</a>
+        </Name>
         <NavBar />
-        <Cta />
       </StyledHeader>
     </Container>
   );

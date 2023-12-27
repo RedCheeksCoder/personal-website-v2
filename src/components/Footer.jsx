@@ -5,6 +5,12 @@ const StyledFooter = styled.div`
   height: 30vh;
   width: 70%;
   color: whitesmoke;
+  a {
+    &:hover {
+      color: #00d7fe;
+      transition: all 0.3s ease-in-out;
+    }
+  }
   p {
     font-weight: 700;
   }
@@ -14,10 +20,38 @@ const StyledFooter = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  /* 2xl */
+  @media (max-width: 1536px) {
+    max-width: 1280px;
+  }
+
+  /* xl */
+  @media (max-width: 1280px) {
+    max-width: 1024px;
+    flex-direction: column;
+    height: 20vh;
+  }
+
   /* lg */
   @media (max-width: 1024px) {
     max-width: 768px;
-    font-size: 2rem;
+  }
+
+  /* md */
+  @media (max-width: 768px) {
+    max-width: 640px;
+  }
+
+  /* sm */
+  @media (max-width: 640px) {
+    max-width: 475px;
+    font-size: 1.5rem;
+  }
+
+  /* xs */
+  @media (max-width: 475px) {
+    width: 100%;
   }
 `;
 const Container = styled.div`
@@ -31,8 +65,7 @@ const Contacts = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  height: 100px;
+  height: 50px;
 `;
 function Footer() {
   return (
@@ -46,8 +79,8 @@ function Footer() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-github"
-              width="24"
-              height="24"
+              width="32"
+              height="32"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
@@ -66,8 +99,8 @@ function Footer() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-linkedin"
-              width="24"
-              height="24"
+              width="32"
+              height="32"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
