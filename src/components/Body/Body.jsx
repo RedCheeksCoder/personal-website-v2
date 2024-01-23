@@ -18,6 +18,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100dvh;
+  width: 100vw;
 
   /* lg */
   @media (max-width: 1024px) {

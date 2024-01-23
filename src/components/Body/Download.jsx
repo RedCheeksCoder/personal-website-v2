@@ -47,9 +47,11 @@ const Container = styled.div`
 function Download() {
   return (
     <Container>
-      <Button variation="primary" size="medium">
-        Download CV
-      </Button>
+      <a href="/public/CV.pdf" download={"John Bryan Odiña CV"}>
+        <Button variation="primary" size="medium">
+          Download CV
+        </Button>
+      </a>
       <div>
         <a
           href="https://github.com/RedCheeksCoder"
@@ -58,8 +60,8 @@ function Download() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-brand-github"
-            width="36"
-            height="36"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"
@@ -78,8 +80,8 @@ function Download() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-brand-linkedin"
-            width="36"
-            height="36"
+            width="30"
+            height="30"
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="currentColor"

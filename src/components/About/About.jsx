@@ -18,7 +18,7 @@ const StyledAbout = styled.div`
   column-gap: 3rem;
 
   img {
-    height: 300px;
+    height: 30rem;
     width: auto;
   }
 
@@ -37,7 +37,7 @@ const StyledAbout = styled.div`
 `;
 
 const Paragraph = styled.p`
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 50%;
   line-height: 1.5;
 
@@ -79,7 +79,7 @@ function About() {
   return (
     <Container>
       <StyledAbout>
-        <img src="../../public/about-me.jpg" alt="About me" />
+        <img src="/about-me.jpg" alt="About me" />
 
         <Paragraph>
           <Header>ABOUT ME</Header>I am an Electronics Engineer with half a

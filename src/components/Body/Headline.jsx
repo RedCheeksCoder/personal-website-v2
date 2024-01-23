@@ -8,7 +8,7 @@ const maxWidths = {
 };
 
 const StyledHeadline = styled.h1`
-  font-size: 7rem;
+  font-size: 5rem;
   line-height: 1;
 
   @media (max-width: ${maxWidths.lg}) {

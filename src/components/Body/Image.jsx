@@ -10,15 +10,30 @@ const maxWidths = {
 const StyledImage = styled.img`
   border-radius: 50%;
   max-width: 100%;
-  height: auto;
+  height: 35rem;
 
   @media (max-width: ${maxWidths.lg}) {
     max-width: ${maxWidths.md};
-    height: 300px;
+    height: 200px;
   }
 
   @media (max-width: ${maxWidths.xs}) {
     width: 100%;
+  }
+  animation: photo 2s ease-in-out infinite;
+  animation-delay: 1s;
+  @keyframes photo {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-22px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 `;
 

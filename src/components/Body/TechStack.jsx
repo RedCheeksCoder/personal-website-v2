@@ -9,7 +9,7 @@ const maxWidths = {
 
 const StyledTechStack = styled.div`
   display: flex;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 500;
   gap: 2rem;
   align-items: center;
@@ -72,26 +72,30 @@ function TechStack() {
     <StyledTechStack>
       <span>
         <img
-          src="https://skillicons.dev/icons?i=html,css"
+          src="https://skillicons.dev/icons?i=html,css,javascript"
           alt="HTML and CSS icons"
+          height={35}
         />
       </span>
       <span>
         <img
-          src="https://skillicons.dev/icons?i=javascript,react"
+          src="https://skillicons.dev/icons?i=react,next"
           alt="JavaScript and React icons"
+          height={35}
         />
       </span>
       <span>
         <img
           src="https://skillicons.dev/icons?i=styledcomponents,tailwind"
           alt="Styled Components and Tailwind icons"
+          height={35}
         />
       </span>
       <span>
         <img
           src="https://skillicons.dev/icons?i=git,github"
           alt="Git and GitHub icons"
+          height={35}
         />
       </span>
     </StyledTechStack>

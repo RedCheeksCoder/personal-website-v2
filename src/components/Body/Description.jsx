@@ -8,11 +8,12 @@ const maxWidths = {
 };
 
 const Details = styled.div`
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 2rem 0;
   width: 80%;
   color: grey;
+  text-wrap: balance;
 `;
 
 const Container = styled.div`
