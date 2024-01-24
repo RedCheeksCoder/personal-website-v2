@@ -22,18 +22,7 @@ const Container = styled.div`
 
   /* lg */
   @media (max-width: 1024px) {
-    max-width: 768px;
     flex-direction: column-reverse;
-  }
-
-  /* md */
-  @media (max-width: 768px) {
-    max-width: 640px;
-  }
-
-  /* sm */
-  @media (max-width: 640px) {
-    max-width: 475px;
   }
 `;
 

@@ -10,10 +10,14 @@ const maxWidths = {
 const Details = styled.div`
   font-size: 1.5rem;
   font-weight: 500;
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 80%;
   color: grey;
   text-wrap: balance;
+  @media (max-width: ${maxWidths.xs}) {
+    width: 100%;
+    font-size: 1.2rem;
+  }
 `;
 
 const Container = styled.div`

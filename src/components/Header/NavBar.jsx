@@ -1,19 +1,10 @@
 import styled from "styled-components";
 
-const maxWidths = {
-  lg: "1024px",
-  md: "768px",
-};
-
 const StyledNavBar = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  @media (max-width: ${maxWidths.lg}) {
-    max-width: ${maxWidths.md};
-    display: none;
-  }
 `;
 
 const List = styled.li`

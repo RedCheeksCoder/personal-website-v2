@@ -14,7 +14,7 @@ const StyledImage = styled.img`
 
   @media (max-width: ${maxWidths.lg}) {
     max-width: ${maxWidths.md};
-    height: 200px;
+    height: 150px;
   }
 
   @media (max-width: ${maxWidths.xs}) {

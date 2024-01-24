@@ -17,6 +17,18 @@ const StyledApp = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+`;
+
+const ProjectSection = styled.section`
+  max-width: 100%;
+`;
+
+const Heading = styled.h2`
+  text-align: left;
+  padding: 2rem 0 2rem 2rem;
+  color: #00d7fe;
+  border-bottom: 1px solid #bebebe;
 `;
 function App() {
   const sr = ScrollReveal({
@@ -39,9 +51,10 @@ function App() {
         <section id="about">
           <About />
         </section>
-        <section id="projects">
+        <ProjectSection id="projects">
+          <Heading>Portfolio</Heading>
           <Projects />
-        </section>
+        </ProjectSection>
       </StyledApp>
       <section id="footer">
         <Footer />

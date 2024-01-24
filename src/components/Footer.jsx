@@ -14,6 +14,7 @@ const StyledFooter = styled.div`
   height: 30vh;
   width: 70%;
   color: whitesmoke;
+  cursor: pointer;
   a {
     &:hover {
       color: #00d7fe;
@@ -31,12 +32,12 @@ const StyledFooter = styled.div`
   align-items: center;
 
   @media (max-width: ${maxWidths.xl}) {
-    max-width: ${maxWidths.lg};
     flex-direction: column;
     height: 20vh;
   }
 
   @media (max-width: ${maxWidths.xs}) {
+    font-size: 1.5rem;
     width: 100%;
   }
 `;

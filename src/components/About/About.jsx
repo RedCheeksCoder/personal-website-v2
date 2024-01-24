@@ -30,7 +30,7 @@ const StyledAbout = styled.div`
   @media (max-width: ${maxWidths.xs}) {
     width: 100%;
     img {
-      height: 250px;
+      height: 230px;
       width: auto;
     }
   }
@@ -57,6 +57,7 @@ const Paragraph = styled.p`
 
   @media (max-width: ${maxWidths.xs}) {
     width: 90%;
+    font-size: 1.3rem;
   }
 `;
 

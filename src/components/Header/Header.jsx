@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 const Container = styled.div`
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 5;
   background-color: whitesmoke;
@@ -15,41 +16,8 @@ const StyledHeader = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 0.8rem;
-
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-
-  /* 2xl */
-  @media (max-width: 1536px) {
-    max-width: 1280px;
-  }
-
-  /* xl */
-  @media (max-width: 1280px) {
-    max-width: 1024px;
-  }
-
-  /* lg */
-  @media (max-width: 1024px) {
-    max-width: 768px;
-  }
-
-  /* md */
-  @media (max-width: 768px) {
-    max-width: 640px;
-  }
-
-  /* sm */
-  @media (max-width: 640px) {
-    max-width: 475px;
-  }
-
-  /* xs */
-  @media (max-width: 475px) {
-    width: 100%;
+  @media (max-width: 650px) {
+    display: none;
   }
 `;
 

@@ -14,6 +14,7 @@ const StyledHeadline = styled.h1`
   @media (max-width: ${maxWidths.lg}) {
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
     max-width: ${maxWidths.md};
@@ -28,14 +29,15 @@ const StyledHeadline = styled.h1`
 
 const HighLight = styled.span`
   color: #00d7fe;
+  display: inline-block;
   text-shadow: 1px 1px grey;
 `;
 
 function Headline() {
   return (
     <StyledHeadline>
-      FRONT END <HighLight>REACT</HighLight> <br />
-      WEB DEVELOPER
+      <HighLight>FRONT END REACT</HighLight>
+      <div>WEB DEVELOPER</div>
     </StyledHeadline>
   );
 }
