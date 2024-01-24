@@ -16,9 +16,6 @@ const StyledHeader = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 0.8rem;
-  @media (max-width: 650px) {
-    display: none;
-  }
 `;
 
 const Name = styled.h1`

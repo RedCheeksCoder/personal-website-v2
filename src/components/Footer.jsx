@@ -54,6 +54,7 @@ const Contacts = styled.div`
   justify-content: center;
   align-items: center;
   height: 50px;
+  gap: 0 1.5rem;
 `;
 
 function Footer() {
@@ -68,8 +69,8 @@ function Footer() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-github"
-              width="32"
-              height="32"
+              width="30"
+              height="30"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"
@@ -88,8 +89,8 @@ function Footer() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-linkedin"
-              width="32"
-              height="32"
+              width="30"
+              height="30"
               viewBox="0 0 24 24"
               strokeWidth="2"
               stroke="currentColor"

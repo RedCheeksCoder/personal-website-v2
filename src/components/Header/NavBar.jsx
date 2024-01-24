@@ -5,6 +5,9 @@ const StyledNavBar = styled.ul`
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 
 const List = styled.li`
