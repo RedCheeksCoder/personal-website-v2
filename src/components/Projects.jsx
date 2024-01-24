@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Payslip } from "./ui/payslip";
+import { Payslip } from "./ui/Payslip";
 import { RentCar } from "./ui/RentCar";
 import { WorldMapper } from "./ui/WorldMapper";
 import { EasyHire } from "./ui/EasyHire";
