@@ -189,7 +189,7 @@ function Projects() {
                 </svg>
               </a>
               <a
-                href="https://payslip-generator-umber.vercel.app/login"
+                href="https://payslip-generator-umber.vercel.app"
                 target="_blank"
                 rel="noreferrer">
                 <svg
