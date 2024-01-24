@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Footer from "./components/Footer";
 import ScrollReveal from "scrollreveal";
 import Projects from "./components/Projects";
+import ScrollToTopButton from "./components/ui/BackToTop";
 
 const StyledApp = styled.div`
   margin: 0;
@@ -43,6 +44,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      <ScrollToTopButton />
       <StyledApp>
         <section id="hero">
           <Header />
