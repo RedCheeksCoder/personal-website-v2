@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const StyledCarousel = styled.div`
   max-width: 70rem;
-  padding: 1rem 3rem;
+  padding: 3rem;
   margin: 1rem;
   box-shadow: 1px -1px 59px -19px rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 1px -1px 59px -19px rgba(0, 0, 0, 0.24);
