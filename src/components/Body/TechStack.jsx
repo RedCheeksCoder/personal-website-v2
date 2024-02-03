@@ -72,7 +72,14 @@ function TechStack() {
     <StyledTechStack>
       <span>
         <img
-          src="https://skillicons.dev/icons?i=html,css,javascript"
+          src="https://skillicons.dev/icons?i=html,css"
+          alt="HTML and CSS icons"
+          height={35}
+        />
+      </span>
+      <span>
+        <img
+          src="https://skillicons.dev/icons?i=javascript,typescript"
           alt="HTML and CSS icons"
           height={35}
         />
