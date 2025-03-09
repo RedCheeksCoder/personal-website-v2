@@ -79,7 +79,7 @@ function TechStack() {
       </span>
       <span>
         <img
-          src="https://skillicons.dev/icons?i=javascript,typescript"
+          src="https://skillicons.dev/icons?i=javascript,wordpress"
           alt="HTML and CSS icons"
           height={35}
         />
